@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Méthode XP (Extreme Programming)</title>
+    <style>
+    
+       html {
+        scroll-behavior: smooth;
+    }
+    
+        /* Reset and Body Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: black;
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: black;
+            color: #FFD700;
+            text-align: center;
+            padding: 1em;
+            position: relative;
+            z-index: 10;
+        }
+
+        header .logo {
+            width: 120px;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        nav a {
+            color: #FFD700;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Section Styling */
+        section {
+            background-color: #1C1C1C;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            box-shadow: 0 4px 15px rgba(255, 215, 0, 0.2);
+            border-radius: 10px;
+            position: relative;
+            z-index: 5;
+            opacity:0.7;
+        }
+        
+        /* Styling for the References Section */
+section#section7 a {
+    color: #FFD700; /* Shiny gold color */
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+section#section7 a:hover {
+    color: #FFFACD; /* Slightly lighter gold on hover for effect */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+        h2 {
+            color: #FFD700;
+        }
+
+        h3 {
+            color: #FFFFFF; /* Make text brighter */
+            margin-top: 15px;
+        }
+
+        p, ul {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #FFFFFF; /* Make text brighter */
+        }
+
+        ul li {
+            margin: 10px 0;
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: black;
+            color: #FFD700;
+            text-align: center;
+            padding: 15px 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Particles Styling */
+        #particles-js {
+            position: fixed; /* Ensure particles are visible throughout scrolling */
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            pointer-events: none; /* Prevent interaction with the particles */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            header .logo {
+                width: 100px;
+            }
+
+            section {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            p, ul {
+                font-size: 0.9rem;
+            }
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <div id="particles-js"></div>
+    <header>
+        <img src="logo.png" class="logo" alt="Logo">
+        <h1>Méthode XP (Extreme Programming)</h1>
+        <nav>
+            <ul>
+                <li><a href="#section1">Introduction</a></li>
+                <li><a href="#section2">Présentation</a></li>
+                <!--<li><a href="#section3">Bénéfices et Défis</a></li>
+                <li><a href="#section4">Quand Utiliser XP</a></li>
+                <li><a href="#section5">Place de XP</a></li>-->
+                <li><a href="#section6">Conclusion</a></li>
+                <li><a href="#section7">Références</a></li>
+                <li><a href="#section8">Participants</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="section1">
+        <h2>I- Introduction</h2>
+        <p>Extreme Programming (XP) est une méthode de développement logiciel agile, introduite par Kent Beck dans les années 1990. Elle se distingue par son approche centrée sur le client et sa philosophie de production de code simple mais de haute qualité. XP est l'une des méthodes agiles les plus poussées, offrant un cadre complet pour la gestion de projets de développement de logiciels.</p>
+        <p>L'origine de XP remonte à un contexte où les méthodes traditionnelles de développement logiciel étaient perçues comme rigides et peu adaptées aux besoins changeants des clients. Kent Beck et ses collègues ont développé XP en réponse à ces défis, en se concentrant sur des pratiques qui favorisent la flexibilité, la qualité et la satisfaction client.</p>
+    </section>
+    <section id="section2">
+        <h2>II- Présentation</h2>
+        <h3>1-Principe de la méthodologie</h3>
+        <p>Les principes de la méthode eXtreme Programming ne sont pas nouveaux puisqu'il s'agit de ceux des méthodes Agiles. La différence et l'originalité résident dans le fait qu'ils sont poussés à l'extrême.</p>
+        <p>La méthode eXtreme Programming s'appuie sur :</p>
+        <ul>
+            <li>une forte réactivité au changement des besoins du client ;</li>
+            <li>un travail d'équipe ;</li>
+            <li>la qualité du travail fourni ;</li>
+            <li>la qualité des tests effectués au plus tôt.</li>
+        </ul>
+        <p>XP repose sur cinq valeurs fondamentales :</p>
+        <ul>
+            <li><strong>Communication :</strong> il est essentiel que chaque membre de l'équipe communique quotidiennement avec ses collègues ainsi qu'avec le client.</li>
+            <li><strong>Simplicité :</strong> la façon la plus simple d'arriver au résultat est privilégiée.</li>
+            <li><strong>Feedback :</strong> le retour d'information entre l'équipe projet et le client est essentiel.</li>
+            <li><strong>Respect :</strong> le respect de chaque membre de l'équipe et de son travail sont primordiaux.</li>
+            <li><strong>Courage :</strong> il faut du courage pour effectuer certains changements.</li>
+        </ul>
+        <h3>2. Avantages de XP</h3>
+        <p>Extreme Programming apparaît comme la plus radicale des méthodes agiles.</p>
+        <p>Si toutes les conditions sont réunies, l’eXtreme Programming peut offrir des résultats surprenants. Voici quelques points forts :</p>
+        <ul>
+            <li><h3>un code propre et linéaire,</h3><p>Favorise une architecture claire et maintenable.</p></li>
+            <li><h3>un logiciel stable grâce à un développement itératif continu,</h3><p>Réduit les bugs et améliore la fiabilité.</p></li>
+            <li><h3>la capacité d’apporter constamment des améliorations.</h3><p>Permet d'adapter et d'optimiser le logiciel.</p></li>
+            <li><h3>Collaboration accrue :</h3><p>Favorise une meilleure communication et un partage de connaissances.</p></li>
+            <li><h3>Satisfaction des clients :</h3><p>Assure que le produit final correspond à leurs attentes.</p></li>
+        </ul>
+        <h3>3. Inconveniants de la methodologie  XP</h3>
+        <p>Bien que la méthode Extreme Programming (XP) présente de nombreux avantages, elle comporte également certains inconvénients :</p>
+        <ul>
+            <li><h3>un budget moyen plus élevé,</h3><p>Les coûts de développement peuvent être plus élevés.</p></li>
+            <li><h3>Nécessité d’une forte implication du client :</h3><p>Les clients doivent être activement engagés.</p></li>
+            <li><h3>Manque de documentation formelle</h3><p>Peut rendre difficile la compréhension du projet par des tiers.</p></li>
+            <li><h3>Adaptation difficile aux grandes équipes</h3><p>La coordination peut devenir problématique.</p></li>
+        </ul>
+    </section>
+    <!--
+    <section id="section3">
+        <h2>III- Bénéfices et Défis</h2>
+        <p>Les avantages de XP incluent une meilleure qualité du code, une satisfaction client accrue grâce aux releases fréquentes, et une adaptation rapide aux changements. Cependant, les défis comprennent la nécessité d'une forte collaboration entre les membres de l'équipe et l'implication continue du client.</p>
+        <p>Par exemple, dans le projet de développement d'une application bancaire, l'application de XP a conduit à une réduction significative des défauts de logiciel et à une meilleure adaptation aux changements réglementaires.</p>
+    </section>
+    <section id="section4">
+        <h2>IV- Quand Utiliser XP</h2>
+        <p>XP est particulièrement approprié pour les projets où les exigences évoluent rapidement et où la qualité du code est primordiale. Il convient moins aux projets avec des exigences très stables et bien définies dès le départ.</p>
+        <p>Il est souvent utilisé dans les startups technologiques où l'adaptabilité et l'innovation sont cruciales.</p>
+    </section>
+    <section id="section5">
+        <h2>V- La Place de XP dans le Landscape Moderne</h2>
+        <p>Aujourd'hui, XP continue d'influencer les pratiques de développement logiciel, bien que souvent intégré dans d'autres méthodologies agiles. Sa focus sur la qualité et l'adaptabilité reste pertinente dans un monde en constante évolution.</p>
+        <p>XP a été critiqué pour sa courbe d'apprentissage陡峭, mais de nombreuses adaptations ont été faites pour rendre ses pratiques plus accessibles.</p>
+    </section>-->
+    <section id="section6">
+        <h2>Conclusion</h2>
+        <p>XP est particulièrement approprié pour les projets où les exigences évoluent rapidement et où la qualité du code est primordiale. Il convient moins aux projets avec des exigences très stables et bien définies dès le départ.</p>
+        <p>Il est souvent utilisé dans les startups technologiques où l'adaptabilité et l'innovation sont cruciales, pour les équipes qui : </p>
+        <ul>
+            <li>Faites face à des exigences en constante évolution ou travaillez avec des clients qui ne savent pas exactement ce qu'ils veulent que le système fasse</li>
+            <li>Vous souhaitez atténuer les risques liés au projet, en particulier en cas de délais serrés.</li>
+            <li>Inclure un petit nombre de programmeurs (entre 2 et 12 est préférable).</li>
+            <li>Sont capables de travailler en étroite collaboration avec les clients.</li>
+            <li>Sont capables de créer des tests unitaires et fonctionnels automatisés.</li>
+        </ul>
+        <p>En conclusion, XP offre un ensemble de pratiques robustes pour le développement logiciel, favorisant la qualité et l'adaptabilité. Cependant, son succès dépend de l'engagement de l'équipe et de l'implication active du client. XP reste un choix puissant pour les projets où la qualité et l'adaptation sont primordiales.</p>
+    </section>
+    <section id="section7">
+        <h2>Références</h2>
+        <ul>
+            
+            <li><a href="https://www.extremeprogramming.org/">Site officiel XP</a></li>
+            <li><a href="https://www.sciencedirect.com/science/article/pii/S095058490300128X">Article académique sur XP</a></li>
+            <li><a href="https://www.planzone.fr/blog/quest-ce-que-la-methodologie-extreme-programming#:~:text=La%20m%C3%A9thodologie%20eXtreme%20Programming%20ou,it%C3%A9ratif%20et%20l'int%C3%A9gration%20continue.">planzone</a></li>
+            <li><a href="https://www.appvizer.fr/magazine/operations/gestion-de-projet/extreme-programming">appviser</a></li>
+            <li><a href="https://alecoledelavie.com/accueil/?p=1513#:~:text=Cela%20permet%20d'avoir%20assez,en%20mesure%20de%20le%20simplifier.">a l'ecole de la vie</a></li>
+            <li><a href="https://asana.com/fr/resources/extreme-programming-xp">asana</a></li>
+        </ul>
+    </section>
+    <section id="section8">
+        <h2>Participants</h2>
+        <ul>
+            <li>AZEBAZE BAHEBEG AUREL BRYAN : 23U2290</li>
+            <li>AZEFACK FONRGWENG KELCY : 23U2306</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 AZEBZE/AZEFACK. Tous droits réservés</p>
+    </footer>
+    <script>
+           particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 100,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": ["#FFD700", "#FFFFFF", "#000000"]
+                },
+                "shape": {
+                    "type": "circle"
+                },
+                "opacity": {
+                    "value": 0.8,
+                    "random": true
+                },
+                "size": {
+                    "value": 5,
+                    "random": true
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#FFD700",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 2
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": true,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    }
+                },
+                "modes": {
+                    "repulse": {
+                        "distance": 100
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
+</body>
+</html>
